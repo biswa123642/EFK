@@ -17,7 +17,6 @@ rules:
 - apiGroups:
   - ""
   resources:
-  - "namespaces"
   - "pods"
   verbs:
   - "get"
@@ -34,7 +33,6 @@ metadata:
 subjects:
 - kind: ServiceAccount
   name: fluentd-es
-  namespace: efklog
   apiGroup: ""
 roleRef:
   kind: ClusterRole
